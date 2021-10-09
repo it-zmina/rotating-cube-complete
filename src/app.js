@@ -1,5 +1,5 @@
-import * as THREE from 'https://cdn.skypack.dev/three@0.133.1/build/three.module.js';
-import {OrbitControls} from 'https://cdn.skypack.dev/three@0.133.1/examples/jsm/controls/OrbitControls.js';
+import * as THREE from 'three/build/three.module.js';
+import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
 
 class App {
   constructor() {
@@ -46,6 +46,7 @@ class App {
   }
 
   render() {
+    this.mesh.rotateX(0.005);
     this.mesh.rotateY(0.01);
     this.renderer.render(this.scene, this.camera);
   }
