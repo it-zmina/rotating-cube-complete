@@ -32,6 +32,13 @@ class App {
 
     this.scene.add(this.mesh);
 
+    // const geometrySphere = new THREE.SphereGeometry( .7, 32, 16 );
+    // const materialSphere = new THREE.MeshBasicMaterial( { color: 0xffff00 } );
+    // const sphere = new THREE.Mesh( geometrySphere, materialSphere );
+    // this.scene.add( sphere )
+    //
+    // sphere.position.set(1.5, 0, 0)
+
     const controls = new OrbitControls(this.camera, this.renderer.domElement);
 
     this.renderer.setAnimationLoop(this.render.bind(this));
